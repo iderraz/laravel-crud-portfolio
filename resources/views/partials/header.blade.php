@@ -18,11 +18,10 @@
         <ul>
           <li class="active"><a href="#"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#facts"><i class="bx bx-file-blank"></i> <span>Facts</span></a></li>
+          <li><a href="#skills"><i class="bx bx-atom"></i> <span>Skills</span></a></li>
           <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
           <li><a href="#services"><i class="bx bx-server"></i> Services</a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-          <br>
           <li><a href="/back"><i class="bx bx-briefcase"></i> Backoffice</a></li>
 
         </ul>

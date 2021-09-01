@@ -16,31 +16,30 @@ class CreateServicesTable extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->string("titre5",10);
-            $table->string("description5",100);
+            $table->text("description5");
 
-            $table->string("ico1",100);
-            $table->string("st1",10);
-            $table->string("sda",50);
 
-            $table->string("ico2",100);
-            $table->string("st2",10);
-            $table->string("sdb",50);
+            $table->text("st1",50);
+            $table->text("sda",50);
 
-            $table->string("ico3",100);
-            $table->string("st3",10);
-            $table->string("sdc",50);
+  
+            $table->text("st2",50);
+            $table->text("sdb",50);
 
-            $table->string("ico4",100);
-            $table->string("st4",10);
-            $table->string("sdd",50);
 
-            $table->string("ico5",100);
-            $table->string("st5",10);
-            $table->string("sde",50);
+            $table->text("st3",50);
+            $table->text("sdc",50);
 
-            $table->string("ico6",100);
-            $table->string("st6",10);
-            $table->string("sdf",50);
+
+            $table->text("st4",50);
+            $table->text("sdd",50);
+
+
+            $table->text("st5",50);
+            $table->text("sde",50);
+
+            $table->text("st6",50);
+            $table->text("sdf",50);
             $table->timestamps();
         });
     }

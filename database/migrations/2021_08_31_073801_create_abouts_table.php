@@ -15,19 +15,19 @@ class CreateAboutsTable extends Migration
     {
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
-            $table->string("titre1",20);
-            $table->string("description1",50);
-            $table->string("sous-titre1",50);
-            $table->string("sous-description1",20);
-            $table->string("birthday",20);
-            $table->string("website",20);
-            $table->integer("phone");
-            $table->string("city",20);
+            $table->text("titre1",100);
+            $table->text("description1");
+            $table->string("sous-titre1",100);
+            $table->text("sous-description1",100);
+            $table->string("birthday",70);
+            $table->string("website",70);
+            $table->string("phone");
+            $table->string("city",70);
             $table->integer("age");
-            $table->string("degree",20);
-            $table->string("email",20);
-            $table->string("freelance",20);
-            $table->string("finale-description",100);
+            $table->string("degree",70);
+            $table->string("email",70);
+            $table->string("freelance",70);
+            $table->text("finale-description");
             $table->timestamps();
         });
     }

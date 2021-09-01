@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BackOfficeController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -18,9 +19,21 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/',[HomeController::class,"index"])->name('home');
-
 Route::get('/back',[BackOfficeController::class,"index"])->name('Back');
 
+
+//About Routes//
+Route::get('/about-back',[AboutController::class,"index"]);
+Route::get('/aboutEdit/{id}',[AboutController::class,"edit"])->name('aboutEdit');
+Route::put('/aboutUpdate/{id}',[AboutController::class,"update"])->name('aboutUpdate');
+//About Routes//
+
+
+//Facts Routes//
+Route::get('/facts-back',[FactController::class,"index"]);
+Route::get('/factEdit/{id}',[FactController::class,"edit"])->name('factEdit');
+Route::put('/factUpdate/{id}',[FactController::class,"update"])->name('factUpdate');
+//Facts Routes//
 
 
 

@@ -20,7 +20,7 @@ class BackOfficeController extends Controller
         $skilld = Skill::all();
         $portfoliod = Portfolio::all();
         $serviced = Service::all();
-        return view('template/backoffice', compact('aboutd', 'contactd', 'factd', 'porfoliod', 'serviced', 'skilld'));
+        return view('template/backoffice', compact('aboutd', 'contactd', 'factd', 'portfoliod', 'serviced', 'skilld'));
     }
 };
 
